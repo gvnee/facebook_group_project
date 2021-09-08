@@ -1,0 +1,133 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,700';
+
+:root{
+  --primary: #dd5;
+  --background: #34495E;
+}
+
+body{
+	font-family: Montserrat, monospace, sans-serif;
+	background-color: #eee;
+	color: #444;
+  padding: 0;
+  margin: 0;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	background-color: #073035;
+}
+
+.c_table{
+	margin: 1em 1em;
+	width: 97.5%;
+	border-collapse: collapse;
+	background-color: var(--background);
+	border-radius: .4em;
+	color: #fff;
+	padding: 1em !important;
+	font-weight: bold;
+}
+
+th, td:before {
+  color: var(--primary);
+}
+
+th{
+	color: #white;
+	padding: 2em !important; 
+}
+
+td{
+	text-align: center;
+	margin: 1em 1em;
+	padding: 1.2em !important;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:link           { color: var(--primary) }
+a:visited        { color: var(--primary) }
+a:hover, a:focus { color: #0c0 }
+a:active         { color: #ccc }
+
+.topnav {
+  overflow: hidden;
+  background-color: var(--background);
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-left: 1em;
+  border-radius: 0.4em;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: var(--primary);
+  color: black;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 5px;
+  font-size: 17px;
+  border: none;
+  border-radius: .4em;
+}
+
+.topnav input[type=text]:focus{
+  outline-width: 0;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: var(--primary);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: .4em;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+.topline{
+background-color: var(--primary);
+height: 5px;
+width: 100%;
+}
