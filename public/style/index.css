@@ -27,10 +27,10 @@ a:active         { color: #ccc }
 .topnav {
   overflow: hidden;
   background-color: var(--background);
-  margin-top: 1em;
-  margin-right: 1em;
-  margin-left: 1em;
-  border-radius: 0.4em;
+  /*margin-top: 1em;*/
+  /*margin-right: 1em;*/
+  /*margin-left: 1em;*/
+  /*border-radius: 0.4em;*/
 }
 
 .topnav a {
@@ -38,15 +38,14 @@ a:active         { color: #ccc }
   display: block;
   color: white;
   text-align: center;
-  padding: 16px 20px;
-  font-weight: bold;
-  font-size: 20px;
+  padding: 16px 26px;
+  font-size: 17px;
 }
 
-.topnav a:hover {
+/*.topnav a:hover {
   background-color: var(--primary);
   color: black;
-}
+}*/
 
 @media screen and (max-width: 600px) {
   .topnav .search-container {

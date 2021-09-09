@@ -9,8 +9,6 @@ session_start();
 
 require "autoload.php";
 
-$user_data = check_login($con);
-
 $query = "select * from fbgroups";
 
 $error = '';
@@ -34,10 +32,10 @@ $kaomoji = array("⊂(◉‿◉)つ","(ㆆ _ ㆆ)","☜(⌒▽⌒)☞","( ╥﹏
 	<div class="topnav">
   <a class="active" href="../public/index.php">Нүүр</a>
   <a href="table3.php">fb groups</a>
-  <a href="#contact">Group нэмэх</a>
+  <a href="../public/addgroup.php">Group нэмэх</a>
   <div class="search-container">
     <form method = "POST">
-      <input type="text" placeholder="Search..." name="query">
+      <input type="text" placeholder="хайх..." name="query">
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
   </div>
